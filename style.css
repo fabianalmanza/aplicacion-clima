@@ -1,39 +1,58 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #00091c;
-  }
-  
-  .contenedor {
+    background-color: #1a2a6c; /* Fondo azul oscuro degradado */
+    background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* Degradado de azul a rojo a amarillo */
+    color: #ffffff; /* Texto blanco */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor {
     max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
-    background-color: #d2cfff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  h1 {
-    color: #333333;
-  }
-  
-  input[type="text"] {
+    background-color: #ffffff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #1a2a6c; /* Texto azul oscuro */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
     padding: 10px;
     font-size: 16px;
-    width: 70%;
-  }
-  
-  button {
+    width: calc(100% - 22px); /* Ancho completo menos el padding y borde */
+    margin-bottom: 20px;
+    border: 2px solid #1a2a6c; /* Borde azul oscuro */
+    border-radius: 5px;
+}
+
+button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #4CAF50;
-    color: #ffffff;
+    background-color: #fdbb2d; /* Fondo amarillo */
+    color: #1a2a6c; /* Texto azul oscuro */
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-  }
-  
-  #datosClima {
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b21f1f; /* Fondo rojo al pasar el ratón */
+    color: #ffffff; /* Texto blanco al pasar el ratón */
+}
+
+#datosClima {
     margin-top: 20px;
     font-size: 18px;
-  }
-  
+    color: #333333; /* Texto gris oscuro */
+}
